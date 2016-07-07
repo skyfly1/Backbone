@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1>Список задач</h1>
+
+    <form action="" id="addTask">
+    	<input type="text" placeholder="Add Task">
+    	<input type="submit" value="Добавить">
+    </form>
+    <div class="task">
+    	<script type="text/template" id="taskTemplate">
+    		<div><%=title%></div> <button class="edit">Edit</button> <button class="delete">Delete</button>
+    	</script>
+    </div>
+
+  <script type="text/template" id="person-id">
+  	 <strong><%=name%></strong>(<%=age%>) - <%=job%> 
+  </script>
+	<script src="js/jquery.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+	<script src="js/task.js"></script>
+</body>
+</html>
